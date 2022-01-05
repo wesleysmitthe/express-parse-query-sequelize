@@ -43,6 +43,13 @@ It uses npm, TypeScript compiler, Jest, ESLint, Prettier, husky, pinst, commitli
 
 // Where name like "%john%doe%"
 ?like=name:*john*doe*
+
+// Where id equals "1" and name like "john"
+?and[eq]=id:1&and[like]=name:john
+
+// Where id equals "1" or name like "john"
+?or[eq]=id:1&and[like]=name:john
+
 ```
 
 > Sorting
@@ -92,6 +99,8 @@ between ------> between
 !between -----> not between
 in -----------> in
 !in ----------> not in
+and[op] ----------> and operator
+or[op] ----------> or operator
 ```
 
 ## Development
