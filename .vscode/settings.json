@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "[jsonc]": {
+    "editor.formatOnSave": false 
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/dist": true
+  }
+}
