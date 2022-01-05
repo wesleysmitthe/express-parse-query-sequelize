@@ -78,11 +78,11 @@ It uses npm, TypeScript compiler, Jest, ESLint, Prettier, husky, pinst, commitli
 ?fields=id,name,email
 ```
 
-> include
+<!-- > include
 
 ```js
 ?include=
-```
+``` -->
 
 ## Operators
 
@@ -99,8 +99,8 @@ between ------> between
 !between -----> not between
 in -----------> in
 !in ----------> not in
-and[op] ----------> and operator
-or[op] ----------> or operator
+and[op] ------> and operator
+or[op] -------> or operator
 ```
 
 ## Development
