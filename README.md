@@ -26,6 +26,26 @@ It uses npm, TypeScript compiler, Jest, ESLint, Prettier, husky, pinst, commitli
 
 ## Usage
 
+> Server
+
+```typescript
+import parserQueryMiddleware from "express-parse-query-sequelize";
+
+app.use(parserQueryMiddleware);
+```
+
+```typescript
+// req.queryParsed contains a content of req.query parsed to sequelize
+
+app.get("/user", (req: Request, res: Response) => {
+  UserModel.findAndCountAll(req.queryParsed)
+    .then((users) => {
+      res.status(200).json(users);
+    })
+    .catch((err: Error) => res.status(500).json(err));
+});
+```
+
 > Where
 
 ```js
@@ -105,7 +125,7 @@ or[op] -------> or operator
 
 ## Development
 
-### Install dependencies with npm:
+### Install dependencies with npm
 
 ```bash
 npm i
@@ -132,3 +152,11 @@ npm run build
 ```
 
 It generates ES Modules (in **dist/** folder), as well as TypeScript declaration files (in **dist/types** folder).
+
+### publish
+
+Publish the library on the npm:
+
+```bash
+npm run publishnpm
+```
