@@ -9,7 +9,7 @@ import chieldProcess from "child_process"
         await exec("npx tsc --build tsconfig.json", { cwd: "./" }) // build project 
         // await exec("npx tsc -p tsconfig.types.json", { cwd: "./" }) // generate types 
 
-        const typesFilename = "queryParaserMiddleware.d.ts";
+        const typesFilename = "queryParserMiddlewareTypes.d.ts";
 
         fs.copySync(`./src/${typesFilename}`, `./dist/types/${typesFilename}`)
 
