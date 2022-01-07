@@ -7,7 +7,11 @@ import chieldProcess from "child_process"
         fs.removeSync("./dist/");
 
         await exec("npx tsc --build tsconfig.json", { cwd: "./" }) // build project 
-        await exec("npx tsc -p tsconfig.types.json", { cwd: "./" }) // generate types 
+        // await exec("npx tsc -p tsconfig.types.json", { cwd: "./" }) // generate types 
+
+        const typesFilename = "queryParaserMiddleware.d.ts";
+
+        fs.copySync(`./src/${typesFilename}`, `./dist/types/${typesFilename}`)
 
     } catch (err) {
         console.error(err);
