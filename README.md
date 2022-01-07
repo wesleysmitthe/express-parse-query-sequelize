@@ -2,7 +2,7 @@
 
 [Express.js](https://expressjs.com) middleware used to parse http query to [Sequelize.js](https://sequelize.org).
 
-[![npm package](https://img.shields.io/badge/npm%20i-example--typescript--package-brightgreen)](https://www.npmjs.com/package/express-parse-query-sequelize) [![version number](https://img.shields.io/npm/v/express-parse-query-sequelize?color=green&label=version)](https://github.com/wesleysmitthe/express-parse-query-sequelize/releases) [![Actions Status](https://github.com/wesleysmitthe/express-parse-query-sequelize/workflows/Test/badge.svg)](https://github.com/wesleysmitthe/express-parse-query-sequelize/actions) [![License](https://img.shields.io/github/license/tomchen/express-parse-query-sequelize)](https://github.com/wesleysmitthe/express-parse-query-sequelize/blob/main/LICENSE)
+[![npm package](https://img.shields.io/badge/npm%20i-example--typescript--package-brightgreen)](https://www.npmjs.com/package/express-parse-query-sequelize) [![version number](https://img.shields.io/npm/v/express-parse-query-sequelize?color=green&label=version)](https://github.com/wesleysmitthe/express-parse-query-sequelize/releases) [![Actions Status](https://github.com/wesleysmitthe/express-parse-query-sequelize/workflows/Test/badge.svg)](https://github.com/wesleysmitthe/express-parse-query-sequelize/actions) [![License](https://img.shields.io/github/license/wesleysmitthe/express-parse-query-sequelize)](https://github.com/wesleysmitthe/express-parse-query-sequelize/blob/main/LICENSE)
 
 It uses npm, TypeScript compiler, Jest, ESLint, Prettier, husky, pinst, commitlint. The production files include ES Modules and TypeScript declaration files.
 
