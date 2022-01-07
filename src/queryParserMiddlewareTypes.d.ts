@@ -10,4 +10,4 @@ declare global {
 }
 
 
-export function queryParserMiddleware(req: Request, res: Response, next: NextFunction): void;
+export default function queryParserMiddleware(req: Request, res: Response, next: NextFunction): void;

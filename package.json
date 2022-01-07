@@ -1,10 +1,10 @@
 {
   "name": "express-parse-query-sequelize",
-  "version": "0.0.4",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "types": "dist/types/queryParserMiddleware.d.js",
+  "types": "dist/types/queryParserMiddlewareTypes.d.ts",
   "scripts": {
     "_postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
@@ -13,7 +13,7 @@
     "build": "ts-node build.ts",
     "start:dev": "npx nodemon",
     "package": "npm run build && npm pack",
-    "publish": "npm run build && npm link && npm publish --access public",
+    "publishnpm": "npm run build && npm link && npm publish --access public",
     "test": "jest --no-cache --runInBand",
     "test:cov": "jest --coverage --no-cache --runInBand",
     "addscope": "node tools/packagejson name express-parse-query-sequelize"
